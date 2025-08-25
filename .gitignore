@@ -1,0 +1,19 @@
+# Directorios y archivos de dependencias
+/vendor/
+/composer.lock
+
+# Archivos de entorno y configuración
+.env
+.env.example
+
+# Ignorar archivos gráficos sin importar su ubicación
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.webp
+
+# Otros archivos que normalmente se ignoran en proyectos web
+.DS_Store
+Thumbs.db

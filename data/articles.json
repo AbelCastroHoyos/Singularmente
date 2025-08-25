@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "title": "Sintomatología Depresiva en Adolescentes",
+        "excerpt": "Este estudio correlacional asoció el uso activo de Instagram con mayor sintomatología depresiva en adolescentes argentinos. El tiempo de uso y el género no mostraron dicha relación.",
+        "pdf_file": "sintomatologia_depresiva_en_adolescentes.pdf",
+        "image": "sintomatologia_depresiva_en_adolescentes.png",
+        "date": "2025-01-01"
+    },
+    {
+        "id": "2",
+        "title": "Seguimiento y Evolución en las Alteraciones Cognitivas",
+        "excerpt": "El Dr. Francisco Lopera, líder del GNA, transformó la neurociencia cognitiva. Sus estudios sobre neurodegeneración y biomarcadores han mejorado el diagnóstico, la detección temprana y las terapias, impactando la salud global.",
+        "pdf_file": "seguimiento_y_evolucion_en_las_alteraciones_cognitivas.pdf",
+        "image": "seguimiento_y_evolucion_en_las_alteraciones_cognitivas.png",
+        "date": "2025-01-15"
+    },
+    {
+        "id": "3",
+        "title": "Infografía Ley de Salud Mental 2460 de 2024",
+        "excerpt": "La Ley 2460 de 2024 revoluciona la salud mental en Colombia, asegurando atención integral con énfasis en prevención, educación y participación comunitaria.",
+        "pdf_file": "infografia_ ley_de_salud_mental_2460_de_2024.pdf",
+        "image": "infografia_ ley_de_salud_mental_2460_de_2024.png",
+        "date": "2025-06-16"
+    },
+    {
+        "id": "4",
+        "title": "XXXXXX",
+        "excerpt": "Este estudio correlacional asoció el uso activo de Instagram con mayor sintomatología depresiva en adolescentes argentinos. El tiempo de uso y el género no mostraron dicha relación.",
+        "pdf_file": "sintomatologia_depresiva_en_adolescentes.pdf",
+        "image": "sintomatologia_depresiva_en_adolescentes.png",
+        "date": "2025-01-01"
+    },
+    {
+        "id": "5",
+        "title": "YYYYYY",
+        "excerpt": "El Dr. Francisco Lopera, líder del GNA, transformó la neurociencia cognitiva. Sus estudios sobre neurodegeneración y biomarcadores han mejorado el diagnóstico, la detección temprana y las terapias, impactando la salud global.",
+        "pdf_file": "seguimiento_y_evolucion_en_las_alteraciones_cognitivas.pdf",
+        "image": "seguimiento_y_evolucion_en_las_alteraciones_cognitivas.png",
+        "date": "2025-01-15"
+    },
+    {
+        "id": "6",
+        "title": "ZZZZZZ",
+        "excerpt": "La Ley 2460 de 2024 revoluciona la salud mental en Colombia, asegurando atención integral con énfasis en prevención, educación y participación comunitaria.",
+        "pdf_file": "infografia_ ley_de_salud_mental_2460_de_2024.pdf",
+        "image": "infografia_ ley_de_salud_mental_2460_de_2024.png",
+        "date": "2025-06-16"
+    }
+]

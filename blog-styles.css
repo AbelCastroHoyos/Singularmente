@@ -1,0 +1,146 @@
+/* Estilos específicos para la página del blog (blog.php) */
+
+.blog-main-content {
+    padding-top: 120px; /* Ajusta el padding superior para no quedar bajo el header fijo */
+    padding-bottom: 60px;
+    background-color: #f9f9f9; /* Un color de fondo suave */
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.0rem;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.page-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #007bff; /* Color de acento */
+    border-radius: 2px;
+}
+
+
+/* Sección contenedora para la búsqueda */
+.search-section {
+    margin-bottom: 50px;
+    padding: 0 20px; /* Asegura que no se pegue a los bordes en móviles */
+    text-align: center; /* Add this to ensure content inside is centered, especially for block items that don't take full width */
+}
+
+/* Contenedor principal del label, input y botón */
+.search-container {
+    display: flex; /* Activa Flexbox para alinear elementos en línea */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Centra los elementos (label, input, button) horizontalmente */
+
+    max-width: 650px; /* Ancho máximo del contenedor, ajustado para mejor centrado visual */
+    margin: 0 auto; /* ¡Centra el contenedor completo en la página! */
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px; /* Espacio interno para los elementos */
+    box-sizing: border-box;
+    position: relative; /* Necesario para el posicionamiento del botón X en móvil si aplica */
+}
+
+/* Estilos para el texto "Buscar artículos:" (label) */
+.search-label {
+    font-size: 1.1rem; /* Tamaño de fuente consistente */
+    color: #555;
+    margin-right: 15px; /* Espacio entre el label y el campo de búsqueda */
+    white-space: nowrap;
+    min-width: fit-content; /* Asegura que no se reduzca más de su contenido */
+}
+
+/* Estilos para el campo de búsqueda (input) */
+#blogSearchInput {
+    flex-grow: 1; /* Permite que el input ocupe todo el espacio disponible */
+    padding: 8px 0; /* Padding vertical, el horizontal ya lo da el contenedor */
+    border: none;
+    font-size: 1.1rem; /* Tamaño de fuente consistente */
+    outline: none;
+    background-color: transparent;
+}
+
+
+#blogSearchInput:focus {
+    /* No necesitamos un borde aquí si el contenedor tiene sombra, se ve más limpio */
+    box-shadow: inset 0 0 0 2px #007bff; /* Un sutil borde interior al enfocar */
+}
+
+/* Estilos para el botón de limpiar 'X' */
+#clearSearchButton {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1.5rem; /* Tamaño grande para la 'X' */
+    cursor: pointer;
+    padding-left: 10px; /* Espacio entre el input y el botón */
+    transition: color 0.3s ease;
+    flex-shrink: 0;
+}
+
+#clearSearchButton:hover {
+    color: #555 !important;
+}
+
+/* Estilos para el mensaje de "no resultados" */
+#noResultsMessage {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+footer .footer-bottom p {
+    background-color: #f8f9fa; /* Un color de fondo suave */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.8em; /* ¡Cambiado a 3px para hacerlo MUCHO más pequeño! */
+    color: #666;
+}
+
+/* Media Queries para responsividad (ajustes para pantallas pequeñas) */
+@media (max-width: 768px) {
+    .search-container {
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
+        justify-content: flex-start; /* Alinea los elementos a la izquierda cuando envuelven */
+        padding: 15px;
+        border-radius: 15px;
+        max-width: 95%; /* Ocupa más ancho en móviles */
+    }
+    .search-label {
+        width: 100%; /* El label ocupará su propia línea */
+        text-align: left; /* Alinea el label a la izquierda cuando está en su propia línea */
+        margin-bottom: 10px; /* Espacio debajo del label */
+        margin-right: 0;
+    }
+    #blogSearchInput {
+        flex-grow: 1; /* El input ocupará el espacio disponible */
+        width: auto; /* Ancho automático */
+        padding: 10px; /* Ajusta el padding para el input en móvil */
+        border: 1px solid #eee; /* Añade un borde ligero para separarlo visualmente */
+        border-radius: 5px;
+        margin-right: 5px; /* Espacio entre el input y el botón X */
+    }
+    #clearSearchButton {
+        /* Posicionamiento para que aparezca en la esquina superior derecha del input en móvil */
+        position: absolute;
+        top: 15px; /* Ajusta la posición superior según el padding del .search-container */
+        right: 15px; /* Ajusta la posición a la derecha según el padding del .search-container */
+        font-size: 1.2rem;
+        padding: 0;
+    }
+}
