@@ -814,6 +814,7 @@ Bastante recomendado!! ❤️‍🩹.
     </div>
     <div id="toast-container"></div>
     <script src="script.js"></script>
-    
+    // Este es un cambio temporal para probar el ommit en github
+    // El resto del codigo
 </body>
 </html>
