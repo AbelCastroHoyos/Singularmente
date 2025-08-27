@@ -823,38 +823,59 @@ footer .footer-bottom p {
 }
 
 .services-description {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     color: #666;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 /* Carrusel de servicios */
 .carousel {
     position: relative;
     width: 100%;
-    margin: 0 auto;
     overflow: hidden;
+    padding: 0px;
+    border-radius: 10px;
 }
 
 .carousel-track {
     display: flex;
-    transition: transform 0.5s ease;
-    gap: 10px; /* Espacio entre elementos */
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    gap: 0;
 }
 
 .carousel-item {
-    flex: 0 0 calc(33.33% - 7px); /* Muestra 3 elementos a la vez en pantallas grandes */
-    padding: 10px;
+     /* 3 items en escritorio; en móvil se sobreescribe a 100% en el media query */
+    flex: 0 0 calc(100% / 3); /* Muestra 3 elementos a la vez en pantallas grandes */
     box-sizing: border-box;
-    text-align: left;
+    margin-right: 12px /* separación real que el JS ahora sí cuenta */
 }
 
+/* El último de la fila real no es determinable por CSS porque vas deslizando,
+   pero no pasa nada: el paso siempre suma este margen y el JS lo tiene en cuenta */
+.carousel-item:last-child {
+    margin-right: 10px; /* déjalo igual para consistencia del paso */
+}
+
+.carousel-item .inner {
+    margin: 0; /* antes 0 20px; elimínalo para no desfasar la percepción */
+    }
+    
 .carousel-item img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Relación de aspecto 1:1 (cuadrada) */
+    aspect-ratio: 1 / 1; 
     object-fit: cover;
     border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Responsivo: 1 item por vista */
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 100%;
+  }
 }
 
 .carousel-item h2 {
@@ -862,6 +883,7 @@ footer .footer-bottom p {
     font-size: 24px;
     color: #333;
     margin: 10px 0 5px;
+    margin-top: 10px;
 }
 
 .carousel-item p {
@@ -884,14 +906,14 @@ footer .footer-bottom p {
 .carousel-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-90%);
+    transform: translateY(-50%);
     color: #0056b3;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
     font-size: 24px;
-    z-index: 2;
+    z-index: 10;
     width: 40px;
     height: 40px;
     display: flex;
@@ -900,11 +922,11 @@ footer .footer-bottom p {
 }
 
 .carousel-button.prev {
-    left: -5px; /* Mueve la flecha izquierda fuera del carrusel */
+    left: 0px; /* Mueve la flecha izquierda fuera del carrusel */
 }
 
 .carousel-button.next {
-    right: -5px; /* Mueve la flecha derecha fuera del carrusel */
+    right: 0px; /* Mueve la flecha derecha fuera del carrusel */
 }
 
 /* Puntos indicadores */
@@ -934,11 +956,11 @@ footer .footer-bottom p {
     }
 
     .carousel-button.prev {
-        left: 10px; /* Ajusta la posición de la flecha izquierda */
+        left: 0px; /* Ajusta la posición de la flecha izquierda */
     }
 
     .carousel-button.next {
-        right: 10px; /* Ajusta la posición de la flecha derecha */
+        right: 0px; /* Ajusta la posición de la flecha derecha */
     }
 }
 

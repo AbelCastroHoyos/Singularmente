@@ -69,8 +69,8 @@ function sendEmail($toEmail, $toName, $subject, $bodyHtml, $bodyText) {
         $mail->CharSet = 'UTF-8'; // Asegurar codificación UTF-8 para caracteres especiales
 
         // Remitente (¡CAMBIA ESTO!)
-        $mail->setFrom('info@singularmente.com.co', 'Singularmente');
-        $mail->addReplyTo('info@singularmente.com.co', 'Contacto Singularmente');
+        $mail->setFrom('info@singularmente.com.co', 'SingularMente');
+        $mail->addReplyTo('info@singularmente.com.co', 'Contacto SingularMente');
 
         // Destinatario
         $mail->addAddress($toEmail, $toName);
@@ -214,17 +214,17 @@ switch ($action) {
             $successSingularmenteEmail = false;
 
             // 1. Correo de confirmación al usuario
-            $subjectUser = 'Solicitud de cita en Singularmente recibida';
+            $subjectUser = 'Solicitud de cita en SingularMente recibida';
             $bodyHtmlUser = "
                 <p>Hola <strong>{$fullName}</strong>,</p>
                 <p>Hemos recibido tu solicitud de cita para el servicio de <strong>{$serviceType}</strong> para la fecha <strong>{$date}</strong>.</p>
                 <p>Pronto nos pondremos en contacto contigo al número <strong>{$phone}</strong> o al correo <strong>{$email}</strong> para confirmar la hora y el profesional asignado.</p>
-                <p>¡Gracias por confiar en Singularmente!</p>
+                <p>¡Gracias por confiar en SingularMente!</p>
                 <p>Atentamente,</p>
-                <p>El equipo de Singularmente</p>
+                <p>El equipo de SingularMente</p>
                 <img src='https://singularmente.com.co/logo.png' alt='Logo Singularmente' style='max-width: 150px; height: auto;'>
             ";
-            $bodyTextUser = "Hola {$fullName},\nHemos recibido tu solicitud de cita para el servicio de {$serviceType} para la fecha {$date}.\nPronto nos pondremos en contacto contigo para confirmar la hora y el profesional asignado.\nGracias por confiar en Singularmente!\nAtentamente,\nEl equipo de Singularmente";
+            $bodyTextUser = "Hola {$fullName},\nHemos recibido tu solicitud de cita para el servicio de {$serviceType} para la fecha {$date}.\nPronto nos pondremos en contacto contigo para confirmar la hora y el profesional asignado.\nGracias por confiar en SingularMente!\nAtentamente,\nEl equipo de SingularMente";
             $successUserEmail = sendEmail($email, $fullName, $subjectUser, $bodyHtmlUser, $bodyTextUser);
 
             // 2. Correo a Singularmente
@@ -241,7 +241,7 @@ switch ($action) {
                 <img src='https://singularmente.com.co/logo.png' alt='Logo Singularmente' style='max-width: 150px; height: auto;'>
             ";
             $bodyTextSingularmente = "Nueva Solicitud de Cita Recibida:\nNombre: {$fullName}\nTeléfono: {$phone}\nCorreo: {$email}\nServicio Solicitado: {$serviceType}\nFecha solicitada: {$date}\nPor favor, contactar al usuario.";
-            $successSingularmenteEmail = sendEmail(SINGULARMENTE_EMAIL, 'Equipo Singularmente', $subjectSingularmente, $bodyHtmlSingularmente, $bodyTextSingularmente);
+            $successSingularmenteEmail = sendEmail(SINGULARMENTE_EMAIL, 'Equipo SingularMente', $subjectSingularmente, $bodyHtmlSingularmente, $bodyTextSingularmente);
 
             echo json_encode([
                 'success' => true,
@@ -483,14 +483,14 @@ switch ($action) {
             $bodyHtmlUser .= "
                 </ul>
                 <p>Te esperamos.</p>
-                <p>Atentamente,<br>El equipo de Singularmente</p>
+                <p>Atentamente,<br>El equipo de SingularMente</p>
                 <img src='https://singularmente.com.co/logo.png' alt='Logo Singularmente' style='max-width: 150px; height: auto;'>
             ";
             $bodyTextUser = "Hola {$full_name},\n¡Gracias por inscribirte a nuestro evento \"{$event_title}\"!\n\nAquí tienes los detalles:\nEvento: {$event_title}\nFecha y Hora: {$event_date}\nModalidad: {$event_modality}\nUbicación: {$event_location}";
             if (!empty($event_connection_url) && ($event_modality == 'virtual' || $event_modality == 'mixed')) {
                 $bodyTextUser .= "\nEnlace de Conexión: {$event_connection_url}";
             }
-            $bodyTextUser .= "\n\nTe esperamos.\nAtentamente,\nEl equipo de Singularmente";
+            $bodyTextUser .= "\n\nTe esperamos.\nAtentamente,\nEl equipo de SingularMente";
 
             $successUserEmail = sendEmail($email, $full_name, $subjectUser, $bodyHtmlUser, $bodyTextUser);
 

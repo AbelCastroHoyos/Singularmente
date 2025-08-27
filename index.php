@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#services">Servicios</a></li>
-                    <li><a href="#equipo">Equipo Singularmente</a></li>
+                    <li><a href="#equipo">Equipo SingularMente</a></li>
                     <li><a href="#testimonials">Testimonios</a></li>
                     <li><a href="#contact">Contáctenos</a></li>
                     <li><a href="#blog">Blog</a></li> 
@@ -106,15 +106,15 @@
                 <!-- Columna izquierda: Acerca de -->
                 <div class="about-column">
                     <p class="about-subtitle">Acerca de</p>
-                    <h2 class="about-title">Singularmente - Salud Mental</h2>
+                    <h2 class="about-title">SingularMente - Salud Mental</h2>
                     <div class="circles">
                         <div class="circle"></div>
                         <div class="circle"></div>
                         <div class="circle"></div>
                     </div>
-                    <p class="about-text">En SINGULARMENTE somos el resultado de un concierto de cinco voces de mujeres profesionales en salud mental que escuchan la complejidad de ser humano, voces polinizantes en un espacio de vida. Aunamos teoría y práctica para identificar factores de riesgo y factores protectores, vulnerabilidades y potencialidades en el caso a caso. Lo hacemos desde enfoques diferenciales que reconocen la integralidad de las personas desde las dimensiones de lo biológico, el contexto, lo vivido y el sentido de la experiencia en relaciones intersubjetivas.</p>
+                    <p class="about-text">En <strong>SingularMente</strong> somos el resultado de un concierto de cuatro voces de mujeres profesionales en salud mental que escuchan la complejidad de ser humano, voces polinizantes en un espacio de vida. Aunamos teoría y práctica para identificar factores de riesgo y factores protectores, vulnerabilidades y potencialidades en el caso a caso. Lo hacemos desde enfoques diferenciales que reconocen la integralidad de las personas desde las dimensiones de lo biológico, el contexto, lo vivido y el sentido de la experiencia en relaciones intersubjetivas.</p>
                     <br>
-                    <p class="about-text">En SINGULARMENTE promovemos el autocuidado, la capacidad de resignificar de manera única una experiencia, para así tomar nuevas iniciativas. Protegemos un enfoque de derecho donde la salud mental no es un objetivo, sino más bien un recurso a preservar.</p>
+                    <p class="about-text">En <strong>SingularMente</strong> promovemos el autocuidado, la capacidad de resignificar de manera única una experiencia, para así tomar nuevas iniciativas. Protegemos un enfoque de derecho donde la salud mental no es un objetivo, sino más bien un recurso a preservar.</p>
                     <br>
                     <p class="about-text">Ofrecemos servicios de coworking profesional con la posibilidad de pertenecer a nuestro staff clínico para compartir desde la formulación de casos, diversas experiencias de intervención desde el campo de la psicología clínica en sus diferentes enfoques y con una mirada integrativa.</p>
                 </div>
@@ -250,7 +250,7 @@
             <div class="circle"></div>
         </div>
         <p class="help-text bold">La vida nos presenta momentos retadores a todos y en ocasiones no contamos con las estrategias adecuadas para manejarlos o nos quedamos encerrados en una sola perspectiva de la realidad. No necesitas atravesar por esas circunstancias en soledad, recibir atención psicológica y neuropsicológica a tiempo puede ayudarte a tener una mejor calidad de vida, tomar decisiones asertivas, considerar otras perspectivas, ser funcional, vivir con propósito y entender qué experiencias te han llevado a ser lo que eres, para elegir continuar con tu camino desde la aceptación o cambiar de rumbo con determinación, sensibilidad y conciencia.</p>
-        <p class="help-text">En Singularmente brindamos un acompañamiento humano y profesional, respetando siempre las particularidades de cada persona con la que trabajamos y honrando la confianza que depositan en nosotros con una práctica profesional orientada por el principio de no maleficencia y una total confidencialidad de los procesos.</p>
+        <p class="help-text">En <strong>SingularMente</strong> brindamos un acompañamiento humano y profesional, respetando siempre las particularidades de cada persona con la que trabajamos y honrando la confianza que depositan en nosotros con una práctica profesional orientada por el principio de no maleficencia y una total confidencialidad de los procesos.</p>
     </div>
 </section>
 
@@ -283,7 +283,7 @@
                 <!-- Elemento 4: Terapia infantil -->
                 <div class="carousel-item">
                     <img src="Images/Psicologia Infantil.jpg" alt="Terapia infantil">
-                    <h2>Psicología infantil</h2>
+                    <h3>Terapia infantil</h3>
                     <p>Busca apoyar a los niños para comprender y manejar sus emociones - comportamientos. Asimismo, proporcionar estrategias de afrontamiento en situaciones difíciles de la vida diaria, entornos familiares y habilidades para la vida.</p>
                     <!--<p class="price">$90K por sesión</p>-->
                 </div>
@@ -291,7 +291,7 @@
                 <!-- Elemento 1: Sesiones individuales -->
                 <div class="carousel-item">
                     <img src="Images/Psicologia Adolescentes.JPG" alt="Psicología adolescentes">
-                    <h2>Psicología adolescentes</h2>
+                    <h3>Psicología individual para adolescentes y jóvenes</h3>
                     <p>En esta etapa vital que está atravesada por tantos cambios y preguntas acerca de la identidad, el cuerpo, las relaciones familiares y  sociales; en ocasiones surge mucha confusión,  podemos acompañar a tejer respuestas y encontrar formas adecuadas de vivir y entender la adolescencia.</p>
                     <!--<p class="price">$100K por sesión</p>-->
                 </div>
@@ -299,7 +299,7 @@
                 <!-- Elemento 2: Terapia de pareja -->
                 <div class="carousel-item">
                     <img src="Images/Terapia de Pareja.jpg" alt="Terapia de pareja">
-                    <h2>Terapia de pareja</h2>
+                    <h3>Terapia de pareja</h3>
                     <p>La expresión de los pensamientos y emociones de manera empática y respetuosa es fundamental en el establecimiento de vínculos saludables. Te acompañamos en este proceso y te brindamos estrategias.</p>
                     <!--<p class="price">$120K por sesión</p>-->
                 </div>
@@ -307,7 +307,7 @@
                 <!-- Elemento 3: Depresión y duelo -->
                 <div class="carousel-item">
                     <img src="Images/Psicología Adultos.JPG" alt="Psicología jovenes y adultos">
-                    <h2>Psicología jovenes y adultos</h2>
+                    <h3>Psicología individual para adultos</h3>
                     <p>Acompañamiento terapéutico en el cual se promueve un espacio seguro y confidencial para abordar las diferentes necesidades de cada individuo, favoreciendo el bienestar emocional y la salud mental.</p>
                     <!--<p class="price">$110K por sesión</p>-->
                 </div>
@@ -315,7 +315,7 @@
                 <!-- Elemento 5: Tratamiento post traumático -->
                 <div class="carousel-item">
                     <img src="Images/Terapia familiar.jpg" alt="Terapia familiar">
-                    <h2>Terapia familiar</h2>
+                    <h3>Terapia familiar</h3>
                     <p>Este espacio favorece la comunicación entre los miembros del hogar, posibilitando la sana expresión emocional, el fortalecimiento de vínculos afectivos y herramientas para el manejo de los conflictos.</p>
                     <!--<p class="price">$110K por sesión</p>-->
                 </div>
@@ -323,15 +323,15 @@
                 <!-- Elemento 6: Neuropsicología -->
                 <div class="carousel-item">
                     <img src="Images/Evaluacion Neuropsicologica.JPG" alt="Neuropsicología">
-                    <h2>Evaluación Neuropsicologica</h2>
-                    <p>A través de pruebas especializadas, analizamos capacidad intelectual y funciones como memoria, atención, lenguaje y funcionamiento ejecutivo para identificar necesidades y diseñar intervenciones personalizadas. Ideal para diagnósticos y planes de tratamiento.</p>
+                    <h3>Evaluación Neuropsicologica</h3>
+                    <p>Permite detectar y comprender dificultades que afectan procesos cognitivos como la atención, memoria, lenguaje, funciones ejecutivas y procesos de aprendizaje, a través de pruebas especializadas. Diseñamos estrategias y planes de tratamiento para acompañarte con calidad y favorecer el bienestar integral.</p>
                     <!--<p class="price">$130K por sesión</p>-->
                 </div>
 
                 <!-- Elemento 6: Rehabilitación Neuropsicología -->
                 <div class="carousel-item">
                     <img src="Images/Rehabilitación Neuropsicologica.jpg" alt="Reabilitación Neuropsicología">
-                    <h2>Rehabilitación Neuropsicologica</h2>
+                    <h3>Rehabilitación Neuropsicologica individual y grupal</h3>
                     <p>Nuestro servicio esta diseñado para niños, jóvenes y adultos que presenten dificultades en procesos cognitivos como la atención, memoria, lenguaje, funcionamiento ejecutivo y dispositivos de aprendizaje; pero también para aquellos que deseen realizar estimulación y entrenamiento de sus capacidades.</p>
                     <!--<p class="price">$130K por sesión</p>-->
                 </div>
@@ -339,7 +339,7 @@
                 <!-- Elemento 6: Talleres de estimulación cognitiva para adultos mayores -->
                 <div class="carousel-item">
                     <img src="Images/Estimulacion Cognitiva Adultos.jpg" alt="Talleres estimulación cognitiva">
-                    <h2>Estimulación cognitiva adultos</h2>
+                    <h3>Talleres de estimulación cognitiva para adultos mayores</h3>
                     <p>Sesiones grupales que ayudan a mantener las habilidades cognitivas como la memoria, la atención, el lenguaje y las funciones ejecutivas, ademas de prevenir el deterioro y disminuir el impacto de enfermedades neurodegenerativas. También fomentan la interacción social y bienestar emocional.</p>
                     <!--<p class="price">$130K por sesión</p>-->
                 </div>
@@ -347,16 +347,32 @@
                 <!-- Elemento 6: Terapias de lectoescritura para niños -->
                 <div class="carousel-item">
                     <img src="Images/Talleres de Lectoescritura.jpg" alt="Talleres estimulación cognitiva">
-                    <h2>Talleres de lectoescritura</h2>
+                    <h3>Talleres de lectoescritura para niños</h3>
                     <p>Se realizan tanto individuales como grupales según necesidad. El objetivo es apoyar el acceso y desarrollo de los dispositivos básicos de aprendizaje (lectura, escritura y cálculo) para niños que estén presentando dificultades y alteraciones en estos procesos.</p>
                     <!--<p class="price">$130K por sesión</p>-->
                 </div>
 
-                <!-- Elemento 7: Alquiler de consultorios -->
+                <!-- Elemento 7: Grupos focales terapéuticos -->
+                <div class="carousel-item">
+                    <img src="Images/Talleres de Lectoescritura.jpg" alt="Grupos focales terapéuticos">
+                    <h3>Grupos focales terapéuticos</h3>
+                    <p>Compartir experiencias viatles dolorosas con otros seres que también están pasando por las mismas situaciones, genera un lazo y una conexión especial, donde el ingrediente principal es la empatía y el acompañamiento en el tegido vital, para establecer redes de apoyo y afecto que permitan a los participantes ir transitando y sanando en conjunto su malestar.</p>
+                    <!--<p class="price">$130K por sesión</p>-->
+                </div>
+
+                <!-- Elemento 8: Talleres para niños, jóvenes, adultos y padres de familia-->
+                <div class="carousel-item">
+                    <img src="Images/Talleres de Lectoescritura.jpg" alt="Talleres para niños, jóvenes, adultos y padres de familia">
+                    <h3>Talleres para niños, jóvenes, adultos y padres de familia</h3>
+                    <p>Compartir y aprender de las experiencias nos permite reconocer que hay otros como nosotros en malestar, y nos permite desde la empatía entender, validar y construir nuevas formas de adrontamiento a nuestras singularidades</p>
+                    <!--<p class="price">$130K por sesión</p>-->
+                </div>
+
+                <!-- Elemento 9: Alquiler de consultorios -->
                 <div class="carousel-item">
                     <img src="Images/office-rental.jpg" alt="Alquiler de consultorios">
-                    <h2>Alquiler de consultorios</h2>
-                    <p>Singular Mente es un coworking especializado en salud mental, cuenta con 5 consultorios equipados para la práctica clínica. Ideal para atender a niños, jóvenes y adultos, brindando flexibilidad en alquiler por horas o paquetes. Ofrecemos un espacio cómodo, seguro y acogedor, diseñado para profesionales comprometidos con el bienestar mental. Cada detalle está pensado para enriquecer la experiencia de terapeutas y pacientes.</p>
+                    <h3>Alquiler de consultorios</h3>
+                    <p><strong>SingularMente</strong> es centro especializado en salud mental, cuenta con 5 consultorios equipados para la práctica clínica. Ideal para atender a niños, jóvenes y adultos. Ofrecemos un espacio cómodo, seguro y acogedor, diseñado para profesionales comprometidos con el bienestar mental.</p>
                     <!--<p class="price">$25K por hora</p>-->
                 </div>
             </div>
@@ -390,7 +406,7 @@
 
         <!-- Descripción -->
         <p class="form-description">
-             Regálate la oportunidad de cuidar de tu salud mental con un profesional altamente calificado para acompañarte.
+             Regálate la oportunidad de cuidar de tu salud mental y la de los tuyos con un profesional altamente calificado para acompañarte.
         </p>
 
         <!-- Formulario -->
@@ -441,7 +457,7 @@
     <div class="container">
         <!-- Texto superior -->
         <p class="testimonials-subtitle">Testimonios</p>
-        <h2 class="testimonials-title">Lo que dicen de Singularmente</h2>
+        <h2 class="testimonials-title">Lo que dicen de SingularMente</h2>
 
         <!-- Puntos decorativos -->
         <div class="circles">
@@ -665,7 +681,7 @@ Bastante recomendado!! ❤️‍🩹.
                     <p class="event-type">Conversatorio</p>
                 </div>
                 <div class="event-location">
-                    <p class="event-address">Singularmente Trasnv 32A Sur 31E - 36</p>
+                    <p class="event-address">SingularMente Trasnv 32A Sur 31E - 36</p>
                     <p class="event-time">18:00 - 19:30</p>
                 </div>
                 <div class="event-action">
@@ -728,7 +744,7 @@ Bastante recomendado!! ❤️‍🩹.
                 </div>
 
                 <!-- Subtítulo -->
-                <h3 class="contact-subheading">Singular Mente</h3>
+                <h3 class="contact-subheading">SingularMente</h3>
 
                 <!-- Dirección -->
                 <p class="contact-address">
@@ -780,20 +796,20 @@ Bastante recomendado!! ❤️‍🩹.
             </div>
         </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date("Y"); ?> Singularmente. Todos los derechos reservados.</p>
+                <p>&copy; <?php echo date("Y"); ?> <strong>SingularMente.</strong> Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
     <div id="privacyConsentModal" class="modal">
         <div class="modal-content">
             <h2>Aviso de Privacidad y Tratamiento de Datos Personales</h2>
-            <p>En *Singularmente*, recolectamos sus datos de identificación, contacto, financieros y, de forma indispensable para su tratamiento, *datos sensibles de salud mental (diagnósticos e historial clínico)*.</p>
+            <p>En <strong>SingularMente</strong>, recolectamos sus datos de identificación, contacto, financieros y, de forma indispensable para su tratamiento, *datos sensibles de salud mental (diagnósticos e historial clínico)*.</p>
             <p>Estos datos son necesarios para la prestación de nuestros servicios terapéuticos, facturación y comunicaciones relevantes. *No compartimos sus datos con terceros.*</p>
             <p>Al aceptar, confirma haber leído y comprendido nuestra completa <a href="politica-de-privacidad.html" target="_blank">Política de Tratamiento de Datos Personales</a>, donde se detallan las finalidades, sus derechos y los canales para ejercerlos. La entrega de datos sensibles es facultativa, aunque su no autorización podría impedir la prestación del servicio.</p>
 
             <div class="checkbox-container">
                 <input type="checkbox" id="acceptCheckbox">
-                <label for="acceptCheckbox">He leído y acepto la Política de Tratamiento de Datos Personales de Singularmente.</label>
+                <label for="acceptCheckbox">He leído y acepto la Política de Tratamiento de Datos Personales de <strong>SingularMente</strong>.</label>
             </div>
 
             <div class="modal-buttons">

@@ -18,7 +18,150 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Configuración del carrusel
+// --- Funcionalidad del Carrusel ---
+const carouselTrack = document.querySelector('.carousel-track');
+const carouselItems = document.querySelectorAll('.carousel-item');
+const prevButton = document.querySelector('.carousel-button.prev');
+const nextButton = document.querySelector('.carousel-button.next');
+const dotsContainer = document.querySelector('.carousel-dots');
+
+let currentIndex = 0;
+const totalItems = carouselItems.length;
+
+// Si en escritorio muestras 3 y en móvil 1, detecta dinámicamente:
+function getItemsVisible() {
+  return window.matchMedia('(max-width: 768px)').matches ? 1 : 3;
+}
+
+// Crea los puntos en función de "slides" reales (no de items)
+function buildDots() {
+  const itemsVisible = getItemsVisible();
+  const slides = Math.max(1, totalItems - itemsVisible + 1);
+
+  dotsContainer.innerHTML = '';
+  for (let i = 0; i < slides; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('carousel-dot');
+    dot.addEventListener('click', () => {
+      currentIndex = i;
+      updateCarousel();
+    });
+    dotsContainer.appendChild(dot);
+  }
+}
+
+// Cálculo robusto del paso (ancho del item + margen derecho)
+function getStep() {
+  const first = carouselItems[0];
+  const rect = first.getBoundingClientRect();             // ancho real (con padding/borde)
+  const styles = getComputedStyle(first);
+  const mr = parseFloat(styles.marginRight) || 0;          // margen derecho SÍ cuenta en el paso
+  return rect.width + mr;
+}
+
+// Límite correcto del índice (para que siempre haya 3 visibles)
+function getMaxIndex() {
+  const itemsVisible = getItemsVisible();
+  return Math.max(0, totalItems - itemsVisible);
+}
+
+// Actualiza posición y puntos
+function updateCarousel() {
+  const maxIndex = getMaxIndex();
+
+  if (currentIndex > maxIndex) currentIndex = 0;
+  if (currentIndex < 0) currentIndex = maxIndex;
+
+  const step = getStep();
+  const offset = -(step * currentIndex);
+  // Usa translate3d para evitar redondeos en algunos navegadores
+  carouselTrack.style.transform = `translate3d(${offset}px, 0, 0)`;
+
+  // activar punto
+  const dots = dotsContainer.querySelectorAll('.carousel-dot');
+  dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
+}
+
+// Botones
+nextButton.addEventListener('click', () => {
+  currentIndex++;
+  updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+  currentIndex--;
+  updateCarousel();
+});
+
+// Inicialización
+window.addEventListener('load', () => {
+  buildDots();
+  updateCarousel();
+});
+
+window.addEventListener('resize', () => {
+  // al cambiar de 3→1 ó 1→3 hay que rehacer dots y realinear
+  const oldMax = getMaxIndex();
+  buildDots();
+  // clamp por si el índice quedó fuera de rango tras el cambio de layout
+  if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+  updateCarousel();
+});
+
+/*
+// Crear los puntos indicadores
+dotsContainer.innerHTML = '';
+for (let i = 0; i < totalItems; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('carousel-dot');
+    dot.addEventListener('click', () => {
+        currentIndex = i;
+        updateCarousel();
+    });
+    dotsContainer.appendChild(dot);
+}
+
+// Función para actualizar la posición del carrusel y los puntos
+function updateCarousel() {
+    // Si el índice es el último, al dar clic en 'Siguiente', regresa al primero
+    if (currentIndex > totalItems - 1) {
+        currentIndex = 0;
+    }
+    // Si el índice es el primero y se da clic en 'Anterior', va al último
+    if (currentIndex < 0) {
+        currentIndex = totalItems - 1;
+    }
+    
+    // Calcula el desplazamiento basado en el ancho exacto del primer elemento
+    const itemWidth = carouselItems[0].offsetWidth;
+    const offset = -(itemWidth * currentIndex); 
+    carouselTrack.style.transform = `translateX(${offset}px)`;
+    
+    // Actualizar el estado activo de los puntos
+    document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+    });
+}
+
+// Escuchador de eventos para el botón 'Siguiente'
+nextButton.addEventListener('click', () => {
+    currentIndex++;
+    updateCarousel();
+});
+
+// Escuchador de eventos para el botón 'Anterior'
+prevButton.addEventListener('click', () => {
+    currentIndex--;
+    updateCarousel();
+});
+
+// Inicializa el carrusel y lo actualiza si la ventana cambia de tamaño
+window.addEventListener('load', updateCarousel);
+window.addEventListener('resize', updateCarousel);
+*/
+
+
+/* // Configuración del carrusel
 const carouselTrack = document.querySelector('.carousel-track');
 const carouselItems = document.querySelectorAll('.carousel-item');
 const prevButton = document.querySelector('.carousel-button.prev');
@@ -139,7 +282,7 @@ nextButton.addEventListener('click', () => {
             dot.classList.remove('active');
         }
     });
-});
+}); */
 
 
 // Auto-avance del carrusel

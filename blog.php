@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Singularmente</title>
+    <title>Blog - SingularMente</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css"> 
@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="index.php#about">Inicio</a></li>
                     <li><a href="index.php#services">Servicios</a></li>
-                    <li><a href="index.php#equipo">Equipo Singularmente</a></li>
+                    <li><a href="index.php#equipo">Equipo SingularMente</a></li>
                     <li><a href="index.php#testimonials">Testimonios</a></li>
                     <li><a href="index.php#contact">Contáctenos</a></li>
                     <li><a href="index.php#blog">Blog</a></li>
@@ -73,7 +73,7 @@
             </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date("Y"); ?> Singularmente. Todos los derechos reservados.</p>
+                <p>&copy; <?php echo date("Y"); ?> <strong>SingularMente.</strong> Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
